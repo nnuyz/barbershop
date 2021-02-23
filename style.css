@@ -101,6 +101,7 @@ img{
     height: 24px;
 }
 .page-catalog .breadcrumbs {
+    grid-column: 1 / -1;
     outline: 5px solid #00ff12;
     outline-offset: -5px;
 }
@@ -116,6 +117,16 @@ img{
     outline-offset: -5px;
     grid-column: 1 / -1;
 }
+.catalog {
+    margin-left: 60px;
+    outline: 5px solid #99f;
+    outline-offset: -5px;
+}
+.filter {
+    outline: 5px solid #678900;
+    outline-offset: -5px;
+}
+
 .main-navigation-wrapper {
     width: 100%;
     margin-bottom: 60px;
@@ -243,15 +254,20 @@ img{
 .inner-page {
     color: var(--basic-black);
     background-color: var(--basic-extra-light);
-    background-image: url("../barbershop/img/background-image.jpg");
+    background-image: url("./barbershop/img/background-image.jpg");
     background-position: 0 0;
     background-repeat: repeat;
 }
 .page-title{
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
     font-size: 30px;
     line-height: 42px;
 }
 .breadcrumbs{
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 .breadcrumbs a {
@@ -309,9 +325,18 @@ img{
     color: var(--special);
 }
 .catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
     list-style: none;
 }
 .catalog-item {
+    width: 220px;
+    min-height: 285px;
+    margin-right: 20px;
+    margin-bottom: 20px;
     background-color: var(--basic-extra-light);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
 }

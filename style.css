@@ -154,8 +154,6 @@ img{
 }
 .news {
     width: 380px;
-    outline: 5px solid rgba(0, 255, 255, 0.7);
-    outline-offset: -5px;
 }
 .news-item {
     margin-bottom: 25px;
@@ -177,6 +175,8 @@ img{
     display: flex;
     justify-content: space-between;
     margin-bottom: 35px;
+    padding: 47px 80px;
+    padding-bottom: 48px;
     color: var(--basic-black);
     background-color: var(--basic-extra-light);
     background-image: url(./img/background-image.jpg);
